@@ -7,7 +7,6 @@ function Index(props) {
         fontWeight:'bold',
         fontSize:"20px",
         textDecoration: 'none'
-        // backgroundColor: '#000000',
         };
     
   return (

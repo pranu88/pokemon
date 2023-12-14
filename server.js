@@ -19,6 +19,9 @@ app.get('/pokemon',(req,res)=>{
     res.render('Index',{data:pokemonData})
 })
 
+app.get('/pokemon/:id',(req,res)=>{
+    res.send(req.params.id)
+})
 
 
 
