@@ -19,10 +19,15 @@ app.get('/pokemon',(req,res)=>{
     res.render('Index',{data:pokemonData})
 })
 
-app.get('/pokemon/:id',(req,res)=>{
-    res.send(req.params.id)
-})
+// app.get('/pokemon/:id',(req,res)=>{
+//     res.send(req.params.id)
+// })
 
+app.get('/pokemon/:indexOfPokemon',(req,res) => {
+    res.render("Show",{
+       pm:pokemonData[req.params.indexOfPokemon] 
+    })
+})
 
 
 
