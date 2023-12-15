@@ -3,7 +3,10 @@ import React from 'react'
 function New() {
     const mystyle ={
         margin:'1em',
-        
+        borderRadius:'20px',
+        color:'green',
+        fontWeight:'bold',
+        backgroungColor:'lightblue'
     };
 
   return (
@@ -21,7 +24,7 @@ function New() {
 
      </form>
 
-        <a href="/pokemon">Back</a>
+        <a href="/pokemon" style={mystyle}>Back</a>
 
 
     </div>
